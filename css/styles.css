@@ -2,15 +2,34 @@
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
 
+    a:hover {
+      text-decoration: none;
+    }
+
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
       background-image: url("../img/bg_grey.jpg");
+      font-family: "ubuntu";
+      font-size: 16px;
     }
 
-    a:hover {
-
+    h1 {
+      font-size: 2.9em;
+      line-height: 1em;
     }
+
+    h2 {
+      color: #58595B;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.5em;      
+      color: #58595B;
+      font-weight: 100;
+    }
+
 
 
     /* CUSTOMIZE THE NAVBAR
@@ -174,22 +193,6 @@
     /* Button Overrides
     ------------------------- */
 
-
-.btn_override {
-  display: inline-block;
-  *display: inline;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  *margin-left: .3em;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-}      
-
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active,
@@ -202,7 +205,7 @@
 
 .navbar .btn-navbar .icon-bar {
   box-shadow: 0px;
-  background-color: #FBB040;
+  background-color: #666;
   width: 25px;
   height: 3px;
 }
@@ -231,4 +234,187 @@
 
 .text_white {
   color: white;
+  width: 80%;
+  margin: 0 auto;
+  font-family: ubuntu;
+  font-weight: 400;
+  font-size: 1.05em;
+  margin-bottom: 30px;
 }
+
+.text_center {
+  text-align:center;
+  color:white;
+  font-weight:500;  
+}
+
+.display_unit {
+  background-image: url("../img/bg-entry-title.jpg");
+  background-size: 1200px;
+  height: 500px;
+}
+
+.display_unit_text {
+  text-align: center;
+  width: 80%;
+  margin: 5em auto;
+}
+
+/*Customize Buttons*/
+
+.btn-reset {
+  display: block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  margin-left:0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: none; 
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white;
+  background-image: none;
+  background-repeat: repeat-x;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.btn-reset:hover,
+.btn-reset:active,
+.btn-reset.active,
+.btn-reset.disabled,
+.btn-reset[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.btn-reset:active,
+.btn-reset.active {
+  background-color: white;
+}
+
+.btn-reset:first-child {
+  *margin-left: 0;
+}
+
+.btn-reset:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: red;
+  background-position: 0px;
+
+}
+
+.btn-reset:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+
+.btn-reset.active,
+.btn-reset:active {
+  background-image: none;
+  background-color: blue;
+  outline: 0;
+  box-shadow: 0px;
+}
+
+.btn-reset.disabled,
+.btn-reset[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  box-shadow: 0px;
+}
+
+/*Customize Buttons*/
+
+.btn-featured {
+  padding: 10px 30px;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1em;
+  color: white;
+  text-align: center;
+  text-shadow: none; 
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #FBB040;
+  box-shadow: none;
+  font-family: "ubuntu";
+  font-size: 2.8em;
+  border-radius: 0.16em;
+  display: none;
+}
+
+
+
+.a-btn{
+    border-radius: 10px;
+    padding: 20px 50px 20px 50px;
+    position: relative;
+    float:left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: block;
+    overflow: hidden;
+    background-color: #FBB040;
+    /*border: 1px solid #90c6c8;*/
+    /*border-color: #90c6c8 #78bdc0 #65b6ba;*/
+    box-shadow: 
+        0px 6px 0px 1px #9E713B, 
+        0 1px 1px #d5d5d5, 
+        0 1px 0 rgba(255,255,255,0.8) ;  
+    transition: all 0.2s linear;
+    border-radius: 8px;
+
+}
+
+.a-btn-text{
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 3px 0 #9E713B;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+
+}
+
+
+
+/*.a-btn:hover{
+    transform: scale(0.95);
+    margin-top: 6px;
+    box-shadow: 
+        0px 0px 0px 1px #9E713B, 
+        0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8),
+        0px 1px 1px 2px #fff;      
+}
+*/
+.a-btn:active{
+/*    transform: scale(1.05);*/
+    transform: scale(0.95);
+    margin-top: 6px;
+    box-shadow: 
+        0px 0px 0px 1px #9E713B, 
+        0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8),
+        0px 1px 1px 2px #fff;      
+}
+
+/*.a-btn:hover .a-btn-symbol{
+    opacity: 0.5;
+    transform: rotate(360deg);
+}*/
+
+
+/*.a-btn:active{
+    transform: scale(0.95);
+    box-shadow: 
+        0px 0px 0px 1px #458a8c, 
+        0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8),
+        0px 1px 1px 2px #fff;  
+}*/
